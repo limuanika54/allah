@@ -2,7 +2,7 @@
 ECO-VISION: BANGLADESH
 NDVI + NPP + Ecosystem Services + Future Predictions | 1990-2040
 """
-
+!pip install streamlit pandas numpy scikit-learn folium streamlit-folium rasterio matplotlib Pillow
 import streamlit as st
 import pandas as pd
 import numpy as np
