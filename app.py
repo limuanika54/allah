@@ -627,7 +627,7 @@ def main():
             x=alt.X("year:O", title="Year", axis=alt.Axis(labelAngle=0)),
             y=alt.Y("ndvi:Q", title="NDVI", scale=alt.Scale(zero=False)),
             color=alt.Color("Type:N", scale=alt.Scale(range=["#4CAF50", "#FF9800"])),
-            strokeDash=alt StrokeDash("Type:N", scale=alt.Scale(range=[[], [5,5]])),
+            strokeDash=alt.StrokeDash("Type:N", scale=alt.Scale(range=[[], [5,5]])),
             tooltip=["year", "ndvi", "Type"]
         ).properties(width=550, height=400, title=f"NDVI Trend -- {district} (R-squared: {r2:.3f})")
         
